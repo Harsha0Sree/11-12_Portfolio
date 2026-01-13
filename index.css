@@ -1,0 +1,125 @@
+:root {
+  --primary-color: #1e1e1e;
+  --secondary-color: #ffffff;
+  --accent-color: rgb(13, 9, 75);
+  font-family: "IBM Plex Mono", Tahoma, Geneva, Verdana, sans-serif;
+}
+body,
+html {
+  overflow: hidden;
+  background-color: var(--primary-color, #1e1e1e);
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "IBM Plex Mono", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 2%;
+  color: var(--secondary-color, white);
+  background-color: var(--primary-color, #1e1e1e);
+  border-radius: 20px;
+  position: sticky;
+  top: 1.5rem;
+  z-index: 999;
+  margin-top: 1.5rem;
+
+}
+
+.navigations {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  border: 1px solid var(--secondary-color, white);
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: var(--primary-color, #1e1e1e);
+}
+.screenframe {
+  margin: 16px;
+  border-radius: 20px;
+  border: 1px solid var(--secondary-color, white);
+  height: calc(100vh - 3.2rem);
+  width: calc(100vw - 3.2rem);
+  overflow-x: hidden;
+  scrollbar-width: none;
+  position: relative;
+}
+
+main {
+  color: var(--secondary-color, white);
+  margin: 1rem;
+}
+.grid {
+  display: grid;
+  position: relative;
+
+  margin: 0px;
+}
+
+.images img {
+  position: absolute;
+}
+.images {
+  
+  margin: 2rem;
+}
+
+.img-1 {
+  width: 200px;
+  right: 10%;
+  top: 20%;
+}
+
+.img-2 {
+  width: 200px;
+  top: 50%;
+  left: 50%;
+}
+.img-3 {
+  width: 200px;
+  top: 20%;
+  left: 10%;
+}
+.img-4 {
+  width: 200px;
+  bottom: 20%;
+  left: 20%;
+}
+.img-5 {
+  width: 200px;
+  bottom: 30%;
+  right: 30%;
+}
+.hero-text {
+  position: absolute;
+  top: 92%;
+  left: 5%;
+}
+.hero {
+  height: 80vh;
+  position: relative;
+  margin-bottom: 5rem;
+  
+}
+.sec-2 {
+  height: 100vh;
+  margin-top: 3rem;
+}
+
+.my-work {
+ margin:3rem;
+ height: 80vh;
+}
