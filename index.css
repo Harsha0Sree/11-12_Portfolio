@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #1e1e1e;
+  --primary-color: #000000;
   --secondary-color: #ffffff;
   --accent-color: rgb(13, 9, 75);
   font-family: "IBM Plex Mono", Tahoma, Geneva, Verdana, sans-serif;
@@ -35,17 +35,21 @@ body {
   top: 1.5rem;
   z-index: 999;
   margin-top: 1.5rem;
-
 }
 
 .navigations {
-  list-style: none;
+  list-style-type: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 4rem;
   border: 1px solid var(--secondary-color, white);
   border-radius: 10px;
   padding: 1rem;
   background-color: var(--primary-color, #1e1e1e);
+}
+.navigations li a {
+  text-decoration: none;
+  color: var(--secondary-color, white);
+  font-size: 1.5rem;
 }
 .screenframe {
   margin: 16px;
@@ -73,7 +77,6 @@ main {
   position: absolute;
 }
 .images {
-  
   margin: 2rem;
 }
 
@@ -112,7 +115,6 @@ main {
   height: 80vh;
   position: relative;
   margin-bottom: 5rem;
-  
 }
 .sec-2 {
   height: 100vh;
@@ -120,6 +122,22 @@ main {
 }
 
 .my-work {
- margin:3rem;
- height: 80vh;
+  margin: 3rem;
+  height: 80vh;
 }
+
+.contact_hero {
+
+  height: 40vh;
+  margin: 5rem;
+  margin-top: 11rem;
+  border-bottom: 1px solid var(--secondary-color, white);
+}
+.contact_heading {
+  font-size: 5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+
+}
+
+
