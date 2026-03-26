@@ -18,6 +18,9 @@ body {
   font-family: "IBM Plex Mono", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+main {
+  color: var(--secondary-color, white);
+}
 * {
   margin: 0;
   padding: 0;
@@ -57,19 +60,14 @@ body {
   border: 1px solid var(--secondary-color, white);
   height: calc(100vh - 3.2rem);
   width: calc(100vw - 3.2rem);
-  overflow-x: hidden;
+  overflow-y: auto;
   scrollbar-width: none;
   position: relative;
 }
 
-main {
-  color: var(--secondary-color, white);
-  margin: 1rem;
-}
 .grid {
   display: grid;
   position: relative;
-
   margin: 0px;
 }
 
@@ -122,22 +120,33 @@ main {
 }
 
 .my-work {
-  margin: 3rem;
+  padding: 3rem;
   height: 80vh;
 }
 
 .contact_hero {
-
-  height: 40vh;
-  margin: 5rem;
-  margin-top: 11rem;
+  height: auto;
+  margin: 0px;
+  padding: 5rem;
   border-bottom: 1px solid var(--secondary-color, white);
+  width: 100%;
+  padding-top: 10rem;
 }
 .contact_heading {
   font-size: 5rem;
   font-weight: 400;
   margin-bottom: 2rem;
+}
+.grid-container_1 {
+  display: grid;
+  gap: 1em;
+  grid-template-areas: 
+    "box1 box2 box3"
+    "box4 box5 box5";
 
 }
 
-
+.box {
+  color: black;
+  background-color: white;
+}
